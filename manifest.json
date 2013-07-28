@@ -1,0 +1,18 @@
+{
+  "name": "cwstar",
+  "version": "0.1",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.chatwork.com/"
+      ],
+      "js": [
+        "loader.js"
+      ]
+    }
+  ],
+  "web_accessible_resources":[
+    "cwstar.js" //グローバル変数を共有する.js
+  ]
+}
